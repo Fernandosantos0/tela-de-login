@@ -1,0 +1,42 @@
+/* Google Fonts */
+
+/* Fonte Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./../images/bg-fundo-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div#container-full {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 0em 1.5em;
+}
+
+header#topo > div#logo {
+    padding-top: 1.5em;
+}
+
+header#topo > div#logo img {
+    width: 3.5em;
+}
+
+header#topo > div#logo img,
+header#topo > div#logo h1 {
+    display: inline-block;
+}
