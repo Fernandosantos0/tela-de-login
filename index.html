@@ -9,6 +9,7 @@
         <!-- css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- reset -->
         <link rel="stylesheet" type="text/css" href="./assets/css/folhaEstilo.css"> <!-- estilo -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsividade.css"> <!-- responsivo -->
         <!-- html5shiv.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
@@ -20,25 +21,60 @@
                     <h1>Dindin</h1>
                 </div>
             </header>
-            <main id="corpo"> 
-                <section id="conteudo">
+            <main id="corpo">
 
+                <section id="conteudo">
+                    <header>
+                        <h3>Controle suas <span>finanças</span>,sem planilha chata.</h3>
+                    </header>
+                    <p>Organizar as suas finanças nunca foi tão fácil,com DINDIN você tem tudo num único lugar e em um clique de distâncias.</p>
+                    <a href="#" rel="next" target="_self" hreflang="pt-br" class="btnLink">Increva-se</a>
                 </section>
+
                 <section id="logar">
 
                     <div id="form-container">
                         <!-- Formulário de login -->
                         <form action="#" method="post" accept-charset="UTF-8" novalidate autocomplete="on">
+                            <fieldset>
+                                <legend>Login</legend>
 
+                                <div>
+                                    <label for="campoEmail">E-mail</label>
+                                    <input type="email" name="email" id="campoEmail" required autocomplete="email">
+                                </div>
+
+                                <div>
+                                    <label for="campoSenha">Senha</label>
+                                    <input type="password" name="senha" id="campoSenha" required autocomplete="current-password">
+                                </div>
+
+                                <input type="submit" value="Enviar" class="btnAcao">
+
+                            </fieldset>
                         </form> <!-- Formulário de login -->
 
                     </div>
 
                 </section>
+
             </main>
+
             <footer id="rodape">
-                <p>&copy;Desenvolvido por <a href="#" rel="external" target="_blank" hreflang="en">Fernando Santos</p>
+                <p><em>&copy;Desenvolvido por <a href="https://github.com/Fernandosantos0" rel="external" target="_blank" hreflang="en">Fernando Santos</a></em></p>
             </footer>
         </div>
+
+        <!-- JavaScript -->
+        <script type="text/javascript">
+
+            /* Função em JavaScript para previni o evento submit do formulário HTML5 */
+            window.onsubmit = (evento) => {
+                evento.preventDefault();
+                console.log('Evento submit acionado');
+            };
+
+        </script> <!-- JavaScript -->
+
     </body>
 </html>

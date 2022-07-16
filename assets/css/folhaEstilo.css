@@ -5,6 +5,8 @@
 
 :root {
     font-size: 62.5%;
+    --primary-color: hsl(240, 62%, 33%); 
+    --primary-color-hover: hsl(240, 43%, 29%); 
 }
 
 * {
@@ -21,10 +23,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 div#container-full {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: aqua;
     padding: 0em 1.5em;
 }
 
@@ -39,4 +44,132 @@ header#topo > div#logo img {
 header#topo > div#logo img,
 header#topo > div#logo h1 {
     display: inline-block;
+}
+
+header#topo > div#logo,
+main#corpo,
+footer#rodape {
+    color: #fff;
+}
+
+main#corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#conteudo {
+    width: 50%;
+}
+
+section#conteudo header h3 {
+    font-size: 2.3em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+section#conteudo header h3 span {
+    color: var(--primary-color);
+}
+
+section#conteudo p {
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 1.6em;
+}
+
+/* Formulário */
+section#logar {
+    background-color: #fff;
+    border-radius: .5em;
+    width: 40%;
+    padding: 2.5em 1.0em;
+}
+
+section#logar form fieldset {
+    padding-top: 1.5em;
+    border: none;
+}
+
+section#logar form legend {
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 1.6em;
+}
+
+section#logar form label {
+    color: black;
+    display: block;
+    margin-bottom: .3em;
+    font-weight: 600;
+}
+
+section#logar form fieldset div {
+    margin-bottom: 1.7em;
+}
+
+section#logar form input {
+    padding: .6em;
+    width: 100%;
+    border-width: 0.1em;
+}
+
+section#logar form input:focus {
+    outline: none;
+}
+
+section#logar form input[type="email"] {
+    padding-left: 1.5em;
+    background: url('./../images/input-usuario.png') no-repeat;
+    background-position-x: .3em;
+    background-position-y: center;
+}
+
+section#logar form input[type="password"] {
+    padding-left: 1.5em;
+    background: url('./../images/input-senha.png') no-repeat;
+    background-position-x: .3em;
+    background-position-y: center;
+}
+
+.btnAcao,
+.btnLink {
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fff;
+    font-size: 1.0em;
+    font-weight: 800;
+    cursor: pointer;
+    transition: color, background-color, 2s;
+}
+.btnAcao:hover,
+.btnLink:hover {
+    background-color: var(--primary-color-hover);
+    color: green;
+}
+
+a.btnLink {
+    display: block;
+    margin-top: 1.5em;
+    padding: 1.0em 0;
+    width: 15.0em;
+    margin-inline: auto;
+    text-align: center;
+}
+
+/* Rodapé */
+footer#rodape {
+    text-align: center;
+}
+
+footer#rodape a {
+    color: #fff;
+    font-style: italic;
+}
+
+footer#rodape a:hover {
+    color: green;
 }
