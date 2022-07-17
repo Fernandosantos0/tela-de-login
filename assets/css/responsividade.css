@@ -1,0 +1,16 @@
+@media (max-width: 862px) {
+
+    main#corpo {
+        flex-direction: column;
+        gap: 2.0em;
+    }
+
+    section#conteudo {
+        width: 100%;
+    }
+
+    section#logar {
+        width: 95%;
+        margin-inline: auto;
+    }
+}

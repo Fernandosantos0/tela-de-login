@@ -163,6 +163,7 @@ a.btnLink {
 /* Rodapé */
 footer#rodape {
     text-align: center;
+    font-style: italic;
 }
 
 footer#rodape a {

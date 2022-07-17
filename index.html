@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tela de login</title>
-        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" sizes="512x512">
         <!-- css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- reset -->
         <link rel="stylesheet" type="text/css" href="./assets/css/folhaEstilo.css"> <!-- estilo -->
@@ -61,7 +61,7 @@
             </main>
 
             <footer id="rodape">
-                <p><em>&copy;Desenvolvido por <a href="https://github.com/Fernandosantos0" rel="external" target="_blank" hreflang="en">Fernando Santos</a></em></p>
+                <p>&copy;Desenvolvido por <a href="https://github.com/Fernandosantos0" rel="external" target="_blank" hreflang="en">Fernando Santos</a></p>
             </footer>
         </div>
 
@@ -70,6 +70,7 @@
 
             /* Função em JavaScript para previni o evento submit do formulário HTML5 */
             window.onsubmit = (evento) => {
+                let cont = 1;
                 evento.preventDefault();
                 console.log('Evento submit acionado');
             };
