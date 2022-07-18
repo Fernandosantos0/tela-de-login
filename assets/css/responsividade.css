@@ -21,6 +21,10 @@
         width: 100%;
     }
 
+    section#conteudo header h3 {
+        font-size: 1.9em;
+    }
+
     section#logar {
         width: 95%;
         margin-inline: auto;
