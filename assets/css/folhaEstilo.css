@@ -37,6 +37,10 @@ header#topo > div#logo {
     padding-top: 1.5em;
 }
 
+header#topo > div#logo a {
+    color: #fff;
+}
+
 header#topo > div#logo img {
     width: 3.5em;
 }
