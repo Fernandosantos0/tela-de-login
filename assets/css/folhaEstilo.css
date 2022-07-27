@@ -148,7 +148,7 @@ section#logar form input {
     border-bottom: .1em solid #000;
 }
 
-section#logar form input:focus {
+input:focus {
     outline: none;
 }
 
@@ -192,10 +192,18 @@ main#corpo-full {
 div#container-form {
     width: 95%;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 1.0em 1.5em;
 }
 
 div#container-form header h3 {
     text-align: center;
+}
+
+main#corpo-full div#container-form p {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
 }
 
 a.btnLink {

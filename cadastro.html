@@ -36,12 +36,22 @@
 
                             <div>
                                 <label for="campoNome">Nome</label>
-                                <input type="text" name="nome" id="campoNome" required autocomplete="name" title="Digite seu nome aqui">
+                                <input type="text" name="nome" id="campoNome" required autocomplete="name" title="Digite seu nome aqui" placeholder="Digite seu nome">
                             </div>
 
                             <div>
                                 <label for="campoSobrenome">Sobrenome</label>
-                                <input type="text" name="sobrenome" id="campoSobrenome" required autocomplete="additional-name" title="Digite seu sobrenome aqui"> 
+                                <input type="text" name="sobrenome" id="campoSobrenome" required autocomplete="additional-name" title="Digite seu sobrenome aqui" placeholder="Digite seu sobrenome"> 
+                            </div>
+
+                            <div>
+                                <p>Sexo</p>
+
+                                <input type="radio" name="sexo" id="masculino" value="m">
+                                <label for="masculino">Masculino</label>
+
+                                <input type="radio" name="sexo" id="feminino" value="f">
+                                <label for="feminino">Feminino</label>
                             </div>
 
                         </fieldset> 
@@ -51,30 +61,98 @@
 
                             <div>
                                 <label for="campoEndereco">Endereço</label>
-                                <input type="text" name="endereco" id="campoEndereco" required autocomplete="address-level1" title="Digite seu endereço">
+                                <input type="text" name="endereco" id="campoEndereco" required autocomplete="address-level1" title="Digite seu endereço" placeholder="Digite o seu endereço">
                             </div>
 
                             <div>
                                 <label for="campoBairro">Bairro</label>
-                                <input type="text" name="bairro" id="campoBairro" required autocomplete="address-level2" title="Digite seu bairro">
+                                <input type="text" name="bairro" id="campoBairro" required autocomplete="address-level2" title="Digite seu bairro" placeholder="Digite seu bairro">
 
                                 <label for="campoNumero">N°</label>
-                                <input type="number" name="numeroCasa" id="campoNumero" required autocomplete="address-level3" min="0">
+                                <input type="number" name="numeroCasa" id="campoNumero" required autocomplete="address-level3" min="0" placeholder="N°">
                             </div>
 
                             <div>
                                 <label for="campoCidade">Cidade</label>
-                                <input type="text" name="cidade" id="campoCidade" required autocomplete="address-level4">
+                                <input type="text" name="cidade" id="campoCidade" required autocomplete="address-level4" placeholder="Digite sua cidade">
                             </div>
 
                             <div>
                                 <label for="slcEstado">Estado</label>
+                                <!-- Campo de seleção -->
                                 <select name="estado" id="slcEstado" required>
                                     <option value="" name="" disabled selected>Selecione</option>
                                     <optgroup label="Região Norte">
                                         <option value="ac">Acre</option>
-                                    </optgroup>
-                                </select>
+                                        <option value="am">Amazonas</option>
+                                        <option value="rr">Roraima</option>
+                                        <option value="ap">Amapá</option>
+                                        <option value="pa">Pará</option>
+                                        <option value="to">Tocantins</option>
+                                        <option value="ro">Rondônia</option>
+                                    </optgroup> <!-- Região Norte -->
+
+                                    <optgroup label="Região Nordeste">
+                                        <option value="ma">Maranhão</option>
+                                        <option value="pi">Piauí</option>
+                                        <option value="ce">Ceará</option>
+                                        <option value="rn">Rio Grande do Norte</option>
+                                        <option value="pe">Pernambuco</option>
+                                        <option value="pb">Paraíba</option>
+                                        <option value="se">Sergipe</option>
+                                        <option value="al">Alagoas</option>
+                                        <option value="ba">Bahia</option>
+                                        <option value="df">Distrito Federal</option>
+                                    </optgroup> <!-- Região Nordeste -->
+
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option value="mt">Mato Grosso</option>
+                                        <option value="ms">Mato Grosso do Sul</option>
+                                        <option value="go">Goiás</option>
+                                    </optgroup> <!-- Região Centro-oeste -->
+
+                                    <optgroup label="Região Sudeste">
+                                        <option value="sp">São Paulo</option>
+                                        <option value="rj">Rio de Janeiro</option>
+                                        <option value="es">Espírito Santo</option>
+                                        <option value="mg">Minas Gerais</option>
+                                    </optgroup> <!-- Região Sudeste -->
+
+                                    <optgroup label="Região Sul">
+                                        <option value="pr">Paraná</option>
+                                        <option value="rs">Rio Grande do Sul</option>
+                                        <option value="sc">Santa Catarina</option>
+                                    </optgroup> <!-- Região Sul -->
+
+                                </select> <!-- Campo de seleção -->
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Informação pessoal</legend>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Informação de contato</legend>
+                            <div>
+                                <label for="campoEmail">E-mail</label>
+                                <input type="email" name="email" id="campoEmail" required autocomplete="email" title="Digite seu e-mail" placeholder="Digite seu e-mail">
+                            </div>
+                            <div>
+                                <label for="campoTel">Telefone / celular</label>
+                                <input type="tel" name="telefone" id="campoTel" required autocomplete="tel" placeholder="(99) 99999 - 9999" title="Digite seu número de telefone celular">
+                            </div>
+
+                            <div>
+                                <p>Você quer recebe notificação no seu email</p>
+
+                                <input type="radio" name="notificacao" id="yes" value="y" checked>
+                                <label for="yes">Sim</label>
+
+                                <input type="radio" name="notificacao" id="no" value="n">
+                                <label for="no">Não</label>
+
                             </div>
                         </fieldset>
                         
