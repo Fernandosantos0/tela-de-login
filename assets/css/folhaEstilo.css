@@ -194,6 +194,10 @@ div#container-form {
     margin: 0 auto;
 }
 
+div#container-form header h3 {
+    text-align: center;
+}
+
 a.btnLink {
     display: block;
     margin-top: 1.5em;
