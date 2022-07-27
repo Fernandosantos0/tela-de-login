@@ -36,14 +36,52 @@
 
                             <div>
                                 <label for="campoNome">Nome</label>
-                                <input type="text" name="nome" id="campoNome" required autocomplete="name">
+                                <input type="text" name="nome" id="campoNome" required autocomplete="name" title="Digite seu nome aqui">
                             </div>
 
                             <div>
                                 <label for="campoSobrenome">Sobrenome</label>
-                                <input type="text" name="sobrenome" id="campoSobrenome" required autocomplete="additional-name"> 
+                                <input type="text" name="sobrenome" id="campoSobrenome" required autocomplete="additional-name" title="Digite seu sobrenome aqui"> 
                             </div>
+
                         </fieldset> 
+
+                        <fieldset>
+                            <legend>Informações de localização</legend>
+
+                            <div>
+                                <label for="campoEndereco">Endereço</label>
+                                <input type="text" name="endereco" id="campoEndereco" required autocomplete="address-level1" title="Digite seu endereço">
+                            </div>
+
+                            <div>
+                                <label for="campoBairro">Bairro</label>
+                                <input type="text" name="bairro" id="campoBairro" required autocomplete="address-level2" title="Digite seu bairro">
+
+                                <label for="campoNumero">N°</label>
+                                <input type="number" name="numeroCasa" id="campoNumero" required autocomplete="address-level3" min="0">
+                            </div>
+
+                            <div>
+                                <label for="campoCidade">Cidade</label>
+                                <input type="text" name="cidade" id="campoCidade" required autocomplete="address-level4">
+                            </div>
+
+                            <div>
+                                <label for="slcEstado">Estado</label>
+                                <select name="estado" id="slcEstado">
+                                    <option value="" name="" disabled selected>Selecione</option>
+                                    <optgroup label="Região Norte">
+                                        <option value="">Acre</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                        
+                        <div id="btns">
+                            <input type="reset" value="Limpar" id="btnLimpar">
+                            <input type="submit" value="Enviar" id="btnEnviar">
+                        </div> <!-- Botões de limpar e enviar -->
                     </form>
 
                     <a id="btnNavigation" href="./index.html" rel="prev" target="_self" hreflang="pt-BR">Voltar</a>
