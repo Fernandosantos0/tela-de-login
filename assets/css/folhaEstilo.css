@@ -184,6 +184,16 @@ section#logar form input[type="password"] {
     color: green;
 }
 
+/* Formulário da segunda página */
+main#corpo-full {
+    width: 100%;
+}
+
+div#container-form {
+    width: 95%;
+    margin: 0 auto;
+}
+
 a.btnLink {
     display: block;
     margin-top: 1.5em;
