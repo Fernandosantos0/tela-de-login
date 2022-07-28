@@ -44,14 +44,19 @@
                                 <input type="text" name="sobrenome" id="campoSobrenome" required autocomplete="additional-name" title="Digite seu sobrenome aqui" placeholder="Digite seu sobrenome"> 
                             </div>
 
-                            <div>
+                            <div class="campo-radio">
                                 <p>Sexo</p>
-
-                                <input type="radio" name="sexo" id="masculino" value="m">
-                                <label for="masculino">Masculino</label>
-
-                                <input type="radio" name="sexo" id="feminino" value="f">
-                                <label for="feminino">Feminino</label>
+                                <div class="container-radio">
+                                    <div>
+                                        <input type="radio" name="sexo" id="masculino" value="m">
+                                        <label for="masculino">Masculino</label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="radio" name="sexo" id="feminino" value="f">
+                                        <label for="feminino">Feminino</label>
+                                    </div>
+                                </div>
                             </div>
 
                         </fieldset> 
@@ -67,8 +72,10 @@
                             <div>
                                 <label for="campoBairro">Bairro</label>
                                 <input type="text" name="bairro" id="campoBairro" required autocomplete="address-level2" title="Digite seu bairro" placeholder="Digite seu bairro">
+                            </div>
 
-                                <label for="campoNumero">N°</label>
+                            <div>
+                                <label for="campoNumero">Número</label>
                                 <input type="number" name="numeroCasa" id="campoNumero" required autocomplete="address-level3" min="0" placeholder="N°">
                             </div>
 
@@ -130,7 +137,81 @@
 
                         <fieldset>
                             <legend>Informação pessoal</legend>
+                            <p>Quais são as suas matérias preferida na escola ou na época dela</p>
 
+                            <!-- Checkbox -->
+                            <div id="container-checkbox"> 
+                                <div>
+                                    <input type="checkbox" name="matematica" id="matematica">
+                                    <label for="matematica">Matemática</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox" name="portugues" id="portugues">
+                                    <label for="portugues">Lingua Portuguesa</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="geografia" id="geografia">
+                                    <label for="geografia">Geografia</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="historia" id="historia">
+                                    <label for="historia">História</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="biologia" id="biologia">
+                                    <label for="biologia">Biologia</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="fisica" id="fisica">
+                                    <label for="fisica">Física</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="quimica" id="quimica">
+                                    <label for="quimica">Química</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="filosofia" id="filosofia">
+                                    <label for="filosofia">Filosofia</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="sociologia" id="sociologia">
+                                    <label for="sociologia">Sociologia</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="edu-fisica" id="edu-fisica">
+                                    <label for="edu-fisica">Educação Física</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="artes" id="artes">
+                                    <label for="artes">Educação Artística</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="literatura" id="literatura">
+                                    <label for="literatura">Literatura</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="estrangeiro" id="estrangeiro">
+                                    <label for="estrangeiro">Lingua Estrangeira</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="nenhuma" id="nenhuma">
+                                    <label for="nenhuma">Nenhuma</label>
+                                </div>
+                            <div>
+                            
                         </fieldset>
 
                         <fieldset>
@@ -145,13 +226,23 @@
                             </div>
 
                             <div>
+                                <label for="campoTime">Dia e hora para contato</label>
+                                <input type="datetime-local" name="time" id="campoTime">
+                            </div>
+
+                            <div class="campo-radio">
                                 <p>Você quer recebe notificação no seu email</p>
+                                <div class="container-radio">
+                                    <div>
+                                        <input type="radio" name="notificacao" id="yes" value="y" checked>
+                                        <label for="yes">Sim</label>
+                                    </div>
 
-                                <input type="radio" name="notificacao" id="yes" value="y" checked>
-                                <label for="yes">Sim</label>
-
-                                <input type="radio" name="notificacao" id="no" value="n">
-                                <label for="no">Não</label>
+                                    <div>
+                                        <input type="radio" name="notificacao" id="no" value="n">
+                                        <label for="no">Não</label>
+                                    </div>
+                                </div>
 
                             </div>
                         </fieldset>
@@ -162,7 +253,9 @@
                         </div> <!-- Botões de limpar e enviar -->
                     </form>
 
-                    <a id="btnNavigation" href="./index.html" rel="prev" target="_self" hreflang="pt-BR">Voltar</a>
+                    <a id="btnNavigation" href="./index.html" rel="prev" target="_self" hreflang="pt-BR">
+                        <i class="fa-solid fa-circle-arrow-left"></i> Voltar
+                    </a>
                 </div>
             </main>
             
