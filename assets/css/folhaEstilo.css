@@ -1,11 +1,11 @@
+@charset "UTF-8";
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-@charset "UTF-8";
 
 /* Google Fonts */
 
@@ -21,6 +21,10 @@
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+*::-moz-selection {
+    background-color: hsl(197, 78%, 82%);
 }
 
 *::selection {
@@ -238,16 +242,28 @@ input[type="number"] {
 
 div#container-checkbox {
     margin-top: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     gap: 0.3em;
 }
 
 div.container-radio {
     margin-top: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: .9em;
 }
 
@@ -287,6 +303,8 @@ div#btns input {
     font-weight: bold;
     padding: .5em 1.0em;
     margin-bottom: 1.0em;
+    -webkit-transition: background-color, color, 2s;
+    -o-transition: background-color, color, 2s;
     transition: background-color, color, 2s;
 }
 
