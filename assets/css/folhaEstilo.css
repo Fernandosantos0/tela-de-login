@@ -23,6 +23,10 @@
             box-sizing: border-box;
 }
 
+*::selection {
+    background-color: hsl(197, 78%, 82%);
+}
+
 body {
     margin: 0;
     padding: 0;
