@@ -9,6 +9,14 @@
 
 @media (max-width: 438px) {
 
+    .quebraLinha {
+        display: block;
+    }
+
+    label.quebraLinha::after {
+        content: ':';
+    }
+    
     div.campo-radio {
         width: 100%;
     }
